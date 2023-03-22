@@ -1,12 +1,12 @@
 from pages.customer_page import CustomerPage
-from time import sleep
+
 
 def test_search_for_a_product(browser):
     customer_page = CustomerPage(browser)
     customer_page.load_page()
     customer_page.search_for_a_product()
     customer_page.make_a_search("veste")
-    sleep(10)
+
 
 def test_invalid_search(browser):
     customer_page = CustomerPage(browser)
@@ -31,7 +31,7 @@ def test_choose_a_category(browser):
      customer_page.click_on_men_button()
      customer_page.click_on_boys_button()
      customer_page.click_on_girls_button()
-     sleep(5)
+
 
 
 
