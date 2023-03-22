@@ -10,6 +10,10 @@ class CustomerPage:
     PRODUCT_TEXT =(By.CSS_SELECTOR, '[class="hit-item__Title-cz15ax-4 dLJesq"]')
     PRODUCT = (By.CSS_SELECTOR, '[src="https://static.reserved.com/media/catalog/product/cache/850/a4e40ebdc3e371adff845072e1c73f37/4/7/4716U-MLC-001-1-602521.jpg"]')
     WOMEN_BUTTON = (By.CSS_SELECTOR, '[href="https://www.reserved.com/ro/ro/femei"]')
+    MEN_BUTTON = (By.CSS_SELECTOR, '[href="https://www.reserved.com/ro/ro/barbati"]')
+    BOYS_BUTTON = (By.CSS_SELECTOR, '[href="https://www.reserved.com/ro/ro/baieti"]')
+    GIRLS_BUTTON = (By.CSS_SELECTOR, '[href="https://www.reserved.com/ro/ro/fete"]')
+
 
 
     def __init__(self, browser):
@@ -36,5 +40,17 @@ class CustomerPage:
 
     def click_on_wommen_button(self):
         self.browser.find_element(*self.WOMEN_BUTTON).click()
+
+    def click_on_men_button(self):
+        self.browser.find_element(*self.MEN_BUTTON).click()
+
+    def click_on_boys_button(self):
+        self.browser.find_element(*self.BOYS_BUTTON).click()
+
+    def click_on_girls_button(self):
+        self.browser.find_element(*self.GIRLS_BUTTON).click()
+
+
+
 
 
